@@ -1,1 +1,38 @@
 [2024-03-22 00:09:58,164: INFO: main: Welcome to my Custom Log]
+[2024-03-22 15:21:55,944: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-03-22 15:21:55,957: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-22 15:24:11,964: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-03-22 15:24:11,968: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-22 15:24:11,989: INFO: common: Created Directory at: artifacts]
+[2024-03-22 15:24:12,006: INFO: common: Created Directory at: artifacts/data_ingestion]
+[2024-03-22 15:25:19,991: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-03-22 15:25:20,001: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-22 15:25:20,023: INFO: common: Created Directory at: artifacts]
+[2024-03-22 15:25:20,033: INFO: common: Created Directory at: artifacts/data_ingestion]
+[2024-03-22 15:25:23,708: INFO: 2291700207: artifacts/data_ingestion/data.zip downlaod! with following info: 
+Connection: close
+Content-Length: 11616915
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "adf745abc03891fe493c3be264ec012691fe3fa21d861f35a27edbe6d86a76b1"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 38D4:24BF3D:13564:18302:65FD5589
+Accept-Ranges: bytes
+Date: Fri, 22 Mar 2024 09:55:22 GMT
+Via: 1.1 varnish
+X-Served-By: cache-del21729-DEL
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1711101322.528514,VS0,VE949
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: cb37b2cc59aed9f2f3135813c5315fec0204a9a6
+Expires: Fri, 22 Mar 2024 10:00:22 GMT
+Source-Age: 1
+
+]
