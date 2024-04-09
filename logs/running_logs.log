@@ -534,3 +534,11 @@ x========================x]
 x========================x]
 [2024-04-09 12:56:12,706: INFO: _internal: 192.168.1.9 - - [09/Apr/2024 12:56:12] "GET /train HTTP/1.1" 200 -]
 [2024-04-09 12:56:13,772: INFO: _internal: 192.168.1.9 - - [09/Apr/2024 12:56:13] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -]
+[2024-04-09 13:41:47,482: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.9:8080]
+[2024-04-09 13:41:47,483: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-04-09 13:42:01,253: INFO: _internal: 192.168.1.9 - - [09/Apr/2024 13:42:01] "GET / HTTP/1.1" 200 -]
+[2024-04-09 13:42:10,255: INFO: _internal: 192.168.1.9 - - [09/Apr/2024 13:42:10] "POST /predict HTTP/1.1" 200 -]
+[2024-04-09 13:42:19,425: INFO: _internal: 192.168.1.9 - - [09/Apr/2024 13:42:19] "POST /predict HTTP/1.1" 200 -]
