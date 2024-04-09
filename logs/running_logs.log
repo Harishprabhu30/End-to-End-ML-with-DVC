@@ -462,3 +462,75 @@ X========================x]
 [2024-03-23 16:35:05,654: INFO: stage_04_model_evaluation: >>>>>> Stage Evaluation completed <<<<<<
 
 X========================x]
+[2024-04-09 12:48:42,794: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.9:8080]
+[2024-04-09 12:48:42,795: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-04-09 12:49:41,877: INFO: _internal: 192.168.1.9 - - [09/Apr/2024 12:49:41] "GET / HTTP/1.1" 200 -]
+[2024-04-09 12:50:03,633: INFO: _internal: 192.168.1.9 - - [09/Apr/2024 12:50:03] "POST /predict HTTP/1.1" 200 -]
+[2024-04-09 12:50:19,340: INFO: _internal: 192.168.1.9 - - [09/Apr/2024 12:50:19] "POST /predict HTTP/1.1" 200 -]
+[2024-04-09 12:51:28,037: INFO: main: >>>>>> Stage Data Ingestion Stage started <<<<<<]
+[2024-04-09 12:51:28,044: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-04-09 12:51:28,050: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-04-09 12:51:28,053: INFO: common: Created Directory at: artifacts]
+[2024-04-09 12:51:28,053: INFO: common: Created Directory at: artifacts/data_ingestion]
+[2024-04-09 12:51:34,247: INFO: data_ingestion: artifacts/data_ingestion/data.zip downlaod! with following info: 
+Connection: close
+Content-Length: 11616915
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "adf745abc03891fe493c3be264ec012691fe3fa21d861f35a27edbe6d86a76b1"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: C036:136DB5:1699ED:1BB149:6614EC79
+Accept-Ranges: bytes
+Date: Tue, 09 Apr 2024 07:21:30 GMT
+Via: 1.1 varnish
+X-Served-By: cache-maa10240-MAA
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1712647289.136835,VS0,VE948
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 8b81d6c68221f4583a50456a5f515f2911fca069
+Expires: Tue, 09 Apr 2024 07:26:30 GMT
+Source-Age: 1
+
+]
+[2024-04-09 12:51:36,069: INFO: main: >>>>>> Stage Data Ingestion Stage completed <<<<<<
+
+x========================x]
+[2024-04-09 12:51:36,070: INFO: main: >>>>>> Stage Prepare Base Model started <<<<<<]
+[2024-04-09 12:51:36,080: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-04-09 12:51:36,085: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-04-09 12:51:36,086: INFO: common: Created Directory at: artifacts]
+[2024-04-09 12:51:36,087: INFO: common: Created Directory at: artifacts/prepare_base_model]
+[2024-04-09 12:51:39,421: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-04-09 12:51:41,643: INFO: main: >>>>>> Stage Prepare Base Model completed <<<<<<
+
+x========================x]
+[2024-04-09 12:51:41,644: INFO: main: >>>>>> Stage Training Stage started <<<<<<]
+[2024-04-09 12:51:41,655: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-04-09 12:51:41,664: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-04-09 12:51:41,665: INFO: common: Created Directory at: artifacts]
+[2024-04-09 12:51:41,667: INFO: common: Created Directory at: artifacts/prepare_callbacks/checkpoint_dir]
+[2024-04-09 12:51:41,668: INFO: common: Created Directory at: artifacts/prepare_callbacks/tensorboard_log_dir]
+[2024-04-09 12:51:41,674: INFO: common: Created Directory at: artifacts/training]
+[2024-04-09 12:55:29,821: INFO: main: >>>>>> Stage Training Stage completed <<<<<<
+
+x========================x]
+[2024-04-09 12:55:29,822: INFO: main: >>>>>> Stage Evaluation Stage started <<<<<<]
+[2024-04-09 12:55:29,827: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-04-09 12:55:29,830: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-04-09 12:55:29,830: INFO: common: Created Directory at: artifacts]
+[2024-04-09 12:56:11,765: INFO: common: json file saved at: scores.json]
+[2024-04-09 12:56:11,766: INFO: main: >>>>>> Stage Evaluation Stage completed <<<<<<
+
+x========================x]
+[2024-04-09 12:56:12,706: INFO: _internal: 192.168.1.9 - - [09/Apr/2024 12:56:12] "GET /train HTTP/1.1" 200 -]
+[2024-04-09 12:56:13,772: INFO: _internal: 192.168.1.9 - - [09/Apr/2024 12:56:13] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -]

@@ -16,22 +16,22 @@ class ClientApp:
         self.classifier = PredictionPipeline(self.filename)
 
 @app.route("/", methods = ["GET"])
-@cross_origin
+@cross_origin()
 def home():
     return render_template("index.html")
 
 @app.route("/train", methods = ["GET", "POST"])
-@cross_origin
+@cross_origin()
 def trainRoute():
-    os.system("python main.py")
+    os.system("python main.py") # can give DVC.yaml path also
     return "Training done successfully!"
 
 @app.route("/predict", methods = ["POST"])
-@cross_origin
+@cross_origin()
 def predictRoute():
     image = request.json['image']
-    decodeImage(image, ClApp.filename)
-    result = ClApp.classifier.predict()
+    decodeImage(image, clApp.filename)
+    result = clApp.classifier.predict()
     return jsonify(result)
 
 if __name__ == "__main__":
